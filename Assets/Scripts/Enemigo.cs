@@ -8,9 +8,26 @@ public class Enemigo : MonoBehaviour
     private bool puedeAtacar = true;
     private SpriteRenderer spriteRenderer;
 
+    public GameObject Personaje;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        vistaEnemigo();
+    }
+
+    void vistaEnemigo(){
+        Vector3 direccion = Personaje.transform.position - transform.position;
+        if (direccion.x >= 0.0f){
+            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        }
+        else{
+            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
