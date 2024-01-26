@@ -19968,6 +19968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8358567624818654437, guid: d7375f2fde7bddc4cb47cb3b7cc4bf21, type: 3}
+      propertyPath: Personaje
+      value: 
+      objectReference: {fileID: 1961390975}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20025,6 +20029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8358567624818654437, guid: d7375f2fde7bddc4cb47cb3b7cc4bf21, type: 3}
+      propertyPath: Personaje
+      value: 
+      objectReference: {fileID: 1961390975}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21144,6 +21152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8358567624818654437, guid: d7375f2fde7bddc4cb47cb3b7cc4bf21, type: 3}
+      propertyPath: Personaje
+      value: 
+      objectReference: {fileID: 1961390975}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21500,6 +21512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8358567624818654437, guid: d7375f2fde7bddc4cb47cb3b7cc4bf21, type: 3}
+      propertyPath: Personaje
+      value: 
+      objectReference: {fileID: 1961390975}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21833,6 +21849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8358567624818654437, guid: d7375f2fde7bddc4cb47cb3b7cc4bf21, type: 3}
+      propertyPath: Personaje
+      value: 
+      objectReference: {fileID: 1961390975}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
