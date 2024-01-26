@@ -5,7 +5,7 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class Gem : MonoBehaviour
+public class GemG : MonoBehaviour
 {
     public TextMeshProUGUI preguntaText;
     public TextMeshProUGUI respuestaAText;
@@ -25,12 +25,12 @@ public class Gem : MonoBehaviour
             premioPanel.SetActive(false);
             Time.timeScale = 0f;
 
-            preguntaText.text = "¿Cuál es la montaña más alta del mundo?";
-            respuestaAText.text = "Everest";
-            respuestaBText.text = "Kilimanjaro";
-            respuestaCText.text = "Mont Blanc";
+            preguntaText.text = "¿Qué tipo de árbol es conocido por ser perenne y mantener sus hojas durante todo el año?";
+            respuestaAText.text = "Sauce";
+            respuestaBText.text = "Pino";
+            respuestaCText.text = "Abedul";
 
-            respuestaCorrecta = "Everest";
+            respuestaCorrecta = "Pino";
 
         }
        
