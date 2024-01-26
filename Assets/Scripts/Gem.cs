@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class Gem : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Gem : MonoBehaviour
         {
             preguntaPanel.SetActive(true);
             Time.timeScale = 0f;
+
+            Console.Clear();
         }
        
     }
