@@ -113,7 +113,6 @@ public class GemG : MonoBehaviour
 
     public void VerificarRespuesta(string respuestaSeleccionada)
     {
-        Debug.Log(respuestaSeleccionada);
         if(respuestaSeleccionada == respuestaCorrecta){
             premioPanel.SetActive(true);
             GameManager.Instance.SumarPuntos(500);
@@ -127,6 +126,7 @@ public class GemG : MonoBehaviour
 
         GameManager.Instance.TotalScore(GameManager.Instance.PuntosTotales);
         PlayerPrefs.SetInt("PuntajeParaDesbloquear", GameManager.Instance.PuntosTotales);
+        PlayerPrefs.SetInt("SuperarNivel1", 1);
         Debug.Log(PlayerPrefs.GetInt("TotalScore"));
         
     }

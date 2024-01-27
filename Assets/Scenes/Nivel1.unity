@@ -21495,6 +21495,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a2c429f73652c46809ebc684a5d7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nivel2: {fileID: 1403998369}
+  logro1: {fileID: 1403998369}
+  logro2: {fileID: 1403998369}
+  logro3: {fileID: 1403998369}
 --- !u!4 &1306442178
 Transform:
   m_ObjectHideFlags: 0
@@ -21745,6 +21749,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396278156}
   m_CullTransparentMesh: 1
+--- !u!1 &1403998369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403998370}
+  m_Layer: 0
+  m_Name: Vacio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1403998370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403998369}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 614.84064, y: 223.14879, z: 1.5537537}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1415943805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2763036292381610526, guid: d7375f2fde7bddc4cb47cb3b7cc4bf21, type: 3}
@@ -22850,7 +22885,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bb79758a51458408c1d7650660e8b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel2: {fileID: 0}
   hud: {fileID: 1998475430}
 --- !u!4 &1750696379
 Transform:
@@ -24768,3 +24802,4 @@ SceneRoots:
   - {fileID: 1960821421}
   - {fileID: 1306442178}
   - {fileID: 1617425858}
+  - {fileID: 1403998370}

@@ -34533,6 +34533,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel2: {fileID: 1090477035}
+  logro1: {fileID: 1090477035}
+  logro2: {fileID: 1090477035}
+  logro3: {fileID: 1090477035}
 --- !u!4 &1306442178
 Transform:
   m_ObjectHideFlags: 0
