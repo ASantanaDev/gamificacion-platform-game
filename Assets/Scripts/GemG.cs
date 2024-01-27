@@ -124,6 +124,11 @@ public class GemG : MonoBehaviour
             premioPanel.SetActive(true);
             premioText.text = "Respuesta Incorrecta!! Tu puntaje de este nivel es: " + GameManager.Instance.PuntosTotales.ToString();
         }
+
+        GameManager.Instance.TotalScore(GameManager.Instance.PuntosTotales);
+        PlayerPrefs.SetInt("PuntajeParaDesbloquear", GameManager.Instance.PuntosTotales);
+        Debug.Log(PlayerPrefs.GetInt("TotalScore"));
+        
     }
 
     private List<T> Shuffle<T>(List<T> list)

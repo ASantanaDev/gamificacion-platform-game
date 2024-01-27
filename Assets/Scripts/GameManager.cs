@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     private int vidas = 3;
     private int puntosTotales;
 
+    private int score;
+
     void Awake()
     {
         if(Instance == null)
@@ -30,6 +32,12 @@ public class GameManager : MonoBehaviour
         puntosTotales += puntosASumar;
         hud.ActualizarPuntos(puntosTotales);
 
+    }
+
+    public void TotalScore(int parcialScore)
+    {
+        score = PlayerPrefs.GetInt("TotalScore") + parcialScore;
+        PlayerPrefs.SetInt("TotalScore", score);
     }
 
     public void PerderVida() {
@@ -54,4 +62,5 @@ public class GameManager : MonoBehaviour
 		vidas += 1;
 		return true;
 	}
+
 }
