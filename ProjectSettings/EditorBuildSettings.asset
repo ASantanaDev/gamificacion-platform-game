@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: "Assets/Scenes/Men\xFA Inicial.unity"
     guid: 74511a00863304e148c0fa342e229aa8
   - enabled: 1
+    path: Assets/Scenes/controles.unity
+    guid: 76e71e81dfba0488b89a3aea3226b606
+  - enabled: 1
+    path: Assets/Scenes/Introduction.unity
+    guid: b1261ebdf8d654a69b42d148efb27552
+  - enabled: 1
+    path: Assets/Scenes/Intro2.unity
+    guid: 6349b5ac363974d608d872628a2b9c9e
+  - enabled: 1
+    path: Assets/Scenes/Intro3.unity
+    guid: 2f46e5d4d344944418bd1caf8fe36f1b
+  - enabled: 1
     path: Assets/Scenes/SeleccionNiveles.unity
     guid: 5894c7ab6bd892d49b4f6b6d9d808b5a
   - enabled: 1

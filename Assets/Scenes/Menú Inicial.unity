@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Opciones
+  m_text: Controles
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9892e4c8a2875404ba999e1a485f2625, type: 2}
   m_sharedMaterial: {fileID: 4288163678813436291, guid: 9892e4c8a2875404ba999e1a485f2625, type: 2}
@@ -896,7 +896,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 893259163}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1721392554}
+        m_TargetAssemblyTypeName: MenuInicial, Assembly-CSharp
+        m_MethodName: Opciones
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &893259163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,7 +1487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Las Aventuras de Geordeland
+  m_text: Las Aventuras de Geordelito
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9892e4c8a2875404ba999e1a485f2625, type: 2}
   m_sharedMaterial: {fileID: 4288163678813436291, guid: 9892e4c8a2875404ba999e1a485f2625, type: 2}

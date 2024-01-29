@@ -7,11 +7,15 @@ public class MenuInicial : MonoBehaviour
 {
     public void Jugar()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
     public void Salir()
     {
         Debug.Log("SALIR...");
         Application.Quit();
     }
+    public void Opciones(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
 }
