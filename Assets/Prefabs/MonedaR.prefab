@@ -166,4 +166,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 200
-  sonidoMoneda: {fileID: 8300000, guid: 9d11a8e095652e842b2359c7b4ff82ef, type: 3}
+  sonidoMoneda: {fileID: 8300000, guid: 74d649f9f51ea1e4bb611c7ebda87408, type: 3}

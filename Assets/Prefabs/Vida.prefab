@@ -143,4 +143,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d16188cfaf677a409d9ca53109f47b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoVida: {fileID: 8300000, guid: a63f151cf38be0244a57ef94a327d9e1, type: 3}
+  sonidoVida: {fileID: 8300000, guid: ce1ac0ccaf3ce7e4492302d6d8caea0f, type: 3}

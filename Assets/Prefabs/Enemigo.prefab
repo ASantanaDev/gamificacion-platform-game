@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownAtaque: 2
-  sonidoAtaque: {fileID: 8300000, guid: f6a5ef10a3ed48249b5509435f95d8a3, type: 3}
+  sonidoAtaque: {fileID: 8300000, guid: 718859df17df1a043b3d08b0c279b1ca, type: 3}
   Personaje: {fileID: 0}
 --- !u!50 &2089534805136735350
 Rigidbody2D:
