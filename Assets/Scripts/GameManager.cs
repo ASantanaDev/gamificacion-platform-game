@@ -8,10 +8,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public HUD hud;
+    public GameObject gameoverPanel;
     public int PuntosTotales { get { return puntosTotales; }}
 
     private int vidas = 3;
     private int puntosTotales;
+    public float tiempoEspera = 5f;
 
     private int score;
 
@@ -45,12 +47,17 @@ public class GameManager : MonoBehaviour
 
 		if(vidas == 0)
 		{
-			// Reiniciamos el nivel.
-			SceneManager.LoadScene(0);
+            gameoverPanel.SetActive(true);
+			Invoke("CargarEscena", tiempoEspera);
 		}
 
 		hud.DesactivarVida(vidas);
 	}
+
+    private void CargarEscena()
+    {
+        SceneManager.LoadScene(0);
+    }
 
 	public bool RecuperarVida() {
 		if (vidas == 3)

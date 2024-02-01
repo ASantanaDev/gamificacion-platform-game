@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Vida : MonoBehaviour
 {
+	public AudioClip sonidoVida;
     private void OnTriggerEnter2D(Collider2D other) {
 		if(other.gameObject.CompareTag("Player"))
 		{
@@ -11,6 +12,7 @@ public class Vida : MonoBehaviour
 			
 			if(vidaRecuperada) {
 				Destroy(this.gameObject);
+				AudioManager.Instance.ReproduceSonido(sonidoVida);
 			}
 		}
 	}

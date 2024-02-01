@@ -22,7 +22,8 @@ public class Gem : MonoBehaviour
     public TextMeshProUGUI premioText;
     public GameObject preguntaPanel;
     public GameObject premioPanel;
-
+    public AudioClip sonidoExito;
+    public AudioClip sonidoFracaso;
     private List<Pregunta> preguntas;
     private Pregunta preguntaActual;
     private string respuestaCorrecta;
@@ -125,6 +126,7 @@ public class Gem : MonoBehaviour
         Debug.Log(respuestaSeleccionada);
         if (respuestaSeleccionada == respuestaCorrecta)
         {
+            AudioManager.Instance.ReproduceSonido(sonidoExito);
             premioPanel.SetActive(true);
             GameManager.Instance.SumarPuntos(500);
             premioText.text = "Respuesta Correcta!! Tu puntaje de este nivel es: " + GameManager.Instance.PuntosTotales.ToString();
@@ -132,12 +134,12 @@ public class Gem : MonoBehaviour
         }
         else
         {
+            AudioManager.Instance.ReproduceSonido(sonidoFracaso);
             premioPanel.SetActive(true);
             premioText.text = "Respuesta Incorrecta!! Tu puntaje de este nivel es: " + GameManager.Instance.PuntosTotales.ToString();
         }
 
         GameManager.Instance.TotalScore(GameManager.Instance.PuntosTotales);
-        PlayerPrefs.SetInt("PuntajeParaDesbloquear", GameManager.Instance.PuntosTotales);
         PlayerPrefs.SetInt("SuperarNivel2", 1);
         Debug.Log(PlayerPrefs.GetInt("TotalScore"));
     }

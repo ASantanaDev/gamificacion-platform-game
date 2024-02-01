@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float fuerzaSalto;
     public float fuerzaGolpe;
     public LayerMask capaSuelo;
+    public AudioClip sonidoSalto;
     private Rigidbody2D rigidbody2D;
     private BoxCollider2D boxCollider2D;
     private bool mirandoDerecha = true;
@@ -48,6 +49,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && EstaEnSuelo())
         {
             rigidbody2D.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
+            AudioManager.Instance.ReproduceSonido(sonidoSalto);
 
         }
     }

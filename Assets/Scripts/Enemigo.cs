@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemigo : MonoBehaviour
 {
     public float cooldownAtaque;
+    public AudioClip sonidoAtaque;
     private bool puedeAtacar = true;
     private SpriteRenderer spriteRenderer;
 
@@ -32,6 +33,7 @@ public class Enemigo : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) {
 		if(other.gameObject.CompareTag("Player")) {
+            AudioManager.Instance.ReproduceSonido(sonidoAtaque);
 			if(!puedeAtacar) return;
 
             puedeAtacar = false;

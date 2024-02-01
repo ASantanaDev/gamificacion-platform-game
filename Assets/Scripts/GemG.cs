@@ -14,7 +14,8 @@ public class GemG : MonoBehaviour
     public TextMeshProUGUI premioText;
     public GameObject preguntaPanel;
     public GameObject premioPanel;
-
+    public AudioClip sonidoExito;
+    public AudioClip sonidoFracaso;
     private List<Pregunta> preguntas;
     private Pregunta preguntaActual;
     private string respuestaCorrecta;
@@ -114,12 +115,14 @@ public class GemG : MonoBehaviour
     public void VerificarRespuesta(string respuestaSeleccionada)
     {
         if(respuestaSeleccionada == respuestaCorrecta){
+            AudioManager.Instance.ReproduceSonido(sonidoExito);
             premioPanel.SetActive(true);
             GameManager.Instance.SumarPuntos(500);
             premioText.text = "Respuesta Correcta!! Tu puntaje de este nivel es: " + GameManager.Instance.PuntosTotales.ToString();
             
         }
         else{
+            AudioManager.Instance.ReproduceSonido(sonidoFracaso);
             premioPanel.SetActive(true);
             premioText.text = "Respuesta Incorrecta!! Tu puntaje de este nivel es: " + GameManager.Instance.PuntosTotales.ToString();
         }

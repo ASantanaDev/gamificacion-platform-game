@@ -12,6 +12,7 @@ public class CambiarNivel : MonoBehaviour
     {
         DesbloquearNivel();
         DesbloquearLogro1();
+        DesbloquearLogro3();
     }
 
     public void DesbloquearNivel()
