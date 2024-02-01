@@ -10,11 +10,9 @@ public class GameManager : MonoBehaviour
     public HUD hud;
     public GameObject gameoverPanel;
     public int PuntosTotales { get { return puntosTotales; }}
-
+    public float tiempoEspera = 5f;
     private int vidas = 3;
     private int puntosTotales;
-    public float tiempoEspera = 5f;
-
     private int score;
 
     void Awake()
@@ -47,7 +45,7 @@ public class GameManager : MonoBehaviour
 
 		if(vidas == 0)
 		{
-            gameoverPanel.SetActive(true);
+			gameoverPanel.SetActive(true);
 			Invoke("CargarEscena", tiempoEspera);
 		}
 

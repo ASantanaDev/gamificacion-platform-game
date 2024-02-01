@@ -50,7 +50,6 @@ public class PlayerController : MonoBehaviour
         {
             rigidbody2D.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
             AudioManager.Instance.ReproduceSonido(sonidoSalto);
-
         }
     }
 
